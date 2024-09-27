@@ -1,0 +1,320 @@
+/* Custom font */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    padding-top: 50px;
+    background: transparent;
+}
+
+.all{
+    height: 38.4rem;
+    background: #282c34;
+}
+
+html {
+    height: 100%;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #6441A5, #2a0845); /* Chrome 10-25, Safari 5.1-6 */
+}
+
+body {
+    font-family: montserrat, arial, verdana;
+    background: transparent;
+}
+
+/* Form styles */
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+#msform fieldset {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 1px rgba(0, 3, 5, 0.966);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 60%;
+    margin-left: 20%;
+    position: absolute;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+}
+
+/* Hide all except the active fieldset */
+#msform fieldset:not(.active) {
+    left: -100%;
+}
+
+/* Inputs */
+#msform input,
+#msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #202931;
+    font-size: 13px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #5c86bd;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+
+.logoj {
+    width: 80px;
+    height: 60px;
+}
+
+/* Buttons */
+#msform .action-button,
+#msform .action-button-previous {
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+.action-button{
+    background: #004aad;
+}
+#msform .action-button:hover,
+#msform .action-button:focus,
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #004aad;
+}
+
+#msform .action-button-previous {
+    background: #2297c5;
+}
+
+/* Headings */
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase ;
+    color: #245280;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    padding: auto;
+    font-weight: bold;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Progressbar */
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /* CSS counters to number the steps */
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 25%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #363333;
+    background: white;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+.action-button-previous{
+    
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+    /* Connector not needed before the first step */
+    content: none;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #38b6ff;
+    color: white;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-30px);
+    }
+    60% {
+        transform: translateX(-15px);
+    }
+}
+
+#msform fieldset.active {
+    animation: bounce 0.5s ease-in-out;
+}
+
+/* Ajoutez ces styles à votre fichier CSS existant */
+
+/* Styles pour react-date-picker */
+.react-date-picker {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Montserrat, Arial, Verdana;
+    color: #2C3E50;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .react-date-picker__inputGroup {
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  .react-date-picker__inputGroup__day,
+  .react-date-picker__inputGroup__month,
+  .react-date-picker__inputGroup__year {
+     width: 20% !important;
+     height: 70% !important; 
+  }
+  .react-date-picker__inputGroup__input {
+    
+    border: 5px solid #e2abab;
+    border-radius: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Montserrat, Arial, Verdana;
+    color: #502c2c;
+    font-size: 13px;
+  }
+  
+  .react-date-picker__inputGroup__leadingZero {
+    margin-right: 4px;
+  }
+  
+  .react-date-picker__calendar {
+    font-family: Montserrat, Arial, Verdana;
+    color: #2C3E50;
+    font-size: 13px;
+    background: #2297c5;
+  }
+  
+  /* Autres styles pour le calendrier */
+  .react-date-picker__wrapper {
+    position: relative;
+    border-radius: 5px;
+    width: 20px;
+  }
+  
+  .react-date-picker__calendar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 40px;
+  }
+  
+  .react-date-picker__calendar__month-view {
+   width: 10px;
+
+  }
+  
+  .react-date-picker__calendar__month-view__week {
+    width: 20px;
+  }
+  
+  .react-date-picker__calendar__month-view__week__day {
+    font-family: Montserrat, Arial, Verdana;
+    color: #2C3E50;
+    font-size: 13px;
+    padding: 8px;
+  }
+  
+  .react-date-picker__navigation__next2-button,
+  .react-date-picker__navigation__prev2-button {
+    display: none; /* Pour masquer les boutons de navigation du mois suivant/precedent */
+  }
+  
+  /* Ajustez ces styles selon vos préférences */
+  
+/* Ajoutez ces styles à votre fichier CSS existant */
+.rule-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .rule-field input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .rule-field button {
+    background-color: #f50707;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+.button{
+    border-radius: 3px;
+    background: #09a8e7;
+    padding: 2px;
+}  

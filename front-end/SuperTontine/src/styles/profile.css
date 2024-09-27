@@ -1,0 +1,192 @@
+/* Styles pour le container du profil */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 110vh;
+    border-radius: 15px;
+    background-color: #ffffff; 
+    transform: translateX(25rem);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Styles pour le contenu du profil */
+.profile-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) ;
+    padding: 20px;
+    height: 80vh;
+    width: 110vh; /* Largeur maximale pour le contenu */
+    overflow-y: auto;
+}
+/* Personnalisation de la scrollbar */
+.profile-info::-webkit-scrollbar {
+    width: 10px; /* Largeur de la scrollbar */
+}
+
+/* Style du "thumb" de la scrollbar (la partie déplaçable) */
+.profile-info::-webkit-scrollbar-thumb {
+    background-color: #004aad; /* Couleur du thumb */
+    border-radius: 5px; /* Bordure arrondie */
+}
+.profile-info::-webkit-scrollbar-thumb:hover{
+    background-color: #3d84cf;
+}
+
+/* Style de la piste de la scrollbar */
+.profile-info::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Couleur de la piste */
+}
+
+
+/* Styles pour les éléments du formulaire */
+.profile-info input[type="text"],
+.profile-info input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content .popup-btn{
+    font-size: 16px;
+    color: #004aad;
+    transform: translateY(115px) translateX(-180px);
+    
+    
+}
+.popup-content .popup-btn2{
+    font-size: 16px;
+    color: #004aad;
+    transform: translateY(90px) translateX(200px);
+    
+}
+.popup-content div{
+
+    width: 350px;
+    height: 200px;
+}
+.popup-content div label{
+    font-weight: bold;
+    color:  #3077c2;
+    font-size: 15px;
+    transform: translateY(80px) translateX(10px);
+    display: flex;
+}
+
+
+.popup-content .popup-btn:hover{
+    color: #5197e2;
+}
+.popup-content .popup-btn2:hover{
+    color: #5197e2;
+}
+
+.popup-content h2{
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+.popup-content {
+    margin: auto;
+    background: #ffffff;
+    width: 350px;
+    border-radius: 10px;
+    padding: 2px;
+    height: 200px;
+  }
+  .popup-content input:focus {
+    border-bottom: solid 1px #83b5f7;
+  }
+  .popup-content input {
+    width: 240px;
+    height: 35px;
+    font-size: 15px;
+    background-color: #fff;
+    padding-left: 10px;
+    text-align: center ;
+    border-bottom: solid 1px #01264d;
+    max-width: 400px;
+    transform: translateY(50px) translateX(70px);
+}
+  .popup-arrow {
+    color: rgb(255, 255, 255);
+  }
+  [role='tooltip'].popup-content {
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+  }
+  
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  [data-popup='tooltip'].popup-overlay {
+    background: transparent;
+  }
+
+/* Styles pour les labels */
+.profile-info label {
+    font-weight: bold;
+    color: #007bff;
+    padding-bottom: 5px; /* Espacement en bas */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+/* Styles pour le titre */
+.profile-info h4 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Espacement en bas */
+    border-bottom: 2px solid #007bff; /* Bordure inférieure */
+    padding-bottom: 10px; /* Espacement en bas */
+}
+
+/* Styles pour le bouton de modification */
+.profile-info-button {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-info-button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Styles pour la fenêtre modale */
+.modal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Styles pour le bouton de fermeture de la fenêtre modale */
+.close {
+    background-color: transparent;
+    border: none;
+    color: #999;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover {
+    color: #555;
+}
+
+/* Styles pour l'en-tête de la fenêtre modale */
+.header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}

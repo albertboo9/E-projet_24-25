@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #f4f4f4;
+    --second-color: #38b6ff;
+    --main-color: #38b6ff;
+    --text-color: #004aad;
+    --other-color: #525253;
+    --big-font: 4.8rem;
+    --h2-font: 3.2rem;
+    --p-font: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18%;
+    z-index: 1000;
+    transition: all .35s ease;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    background-color: #ffffff;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 70px;
+    height: 50px;
+    transform: translateY(23px);
+}
+
+.logotext {
+    transform: translateX(-300%);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: var(--p-font);
+    color: var(--text-color);
+    padding: 10px 28px;
+    font-weight: 700;
+    transition: all .35s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.navbar a.cart {
+    font-size: 30px;
+}
+
+#menu-icon {
+    color: var(--text-color);
+    font-size: 40px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.top-btn a {
+    display: inline-block;
+    background: var(--text-color);
+    color: #fff;
+    padding: 17px 32px;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+@media (max-width: 1110px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .top-btn {
+        display: none;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #fff;
+        align-items: flex-start;
+        box-shadow: 0px 0px 1px #13084982;
+        transition: all .40s ease;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    .navbar.open {
+        top: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .navbar a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

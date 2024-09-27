@@ -1,0 +1,29 @@
+{
+  "Utilisateurs": [
+    {
+      "id": "3dbb",
+      "email": "booalbert60@gmail.com",
+      "password": "12345",
+      "fullname": "albert",
+      "confirmedpassword": "12345"
+    }
+  ],
+  "Tontines": [
+    {
+      "id": "5297",
+      "name": "Supertontine",
+      "description": "Tontine des membres de la supertontine",
+      "DateDebut": "2024-04-30",
+      "frequency": "7",
+      "contributionAmount": "50000",
+      "securityAmount": "25000",
+      "withdrawalrulesArray": "Les participants ne payant pas leur contribution, dans le temps imparti recevront une amende de 10%",
+      "participants": "50"
+    }
+  ],
+  "Transactions": [],
+  "Participants": [],
+  "Wallet": [],
+  "Wallet-securise": [],
+  "participation": []
+}

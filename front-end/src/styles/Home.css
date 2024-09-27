@@ -1,0 +1,113 @@
+.slider-tontine{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+ 
+  border-radius: 15px;
+}
+.btn-box{
+text-align: center;
+}
+.btn-box .btn-h{
+  background: linear-gradient(
+        114.07deg,
+        rgba(26, 70, 95, 0.801) 3.49%,
+        rgba(61, 147, 218, 0.541) 34.7%
+      ),
+      linear-gradient(138.58deg, rgba(59, 43, 30, 0.37) 43.56%, #67b5fe 112.68%);
+  text-decoration: none;
+  margin-bottom: 2px;
+  border: solid 1px #2675cf;
+  border-radius: 3px;
+  display: flex;
+  height: 35px;
+  padding: 2.5%;
+  padding-left: 30%;
+  font-size: 14px;
+  color: #063a75;
+ 
+}
+.btn-box .btn-h:hover{
+  background-color: #79baf8;
+}
+
+.card{
+    background: #ffffff;
+    border-radius: 17px;
+    width: 30%;
+    margin: auto ;
+    height: 170px;
+    padding: 1%;
+}
+
+.info{
+    display: flex;
+    border-bottom: solid 1px #2675cf;
+    padding-bottom: 1%;
+}
+
+/* grid c1 */
+.grid-c1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-c1-content {
+    background: linear-gradient(
+        114.07deg,
+        rgba(26, 70, 95, 0.801) 3.49%,
+        rgba(61, 147, 218, 0.541) 34.7%
+      ),
+      linear-gradient(138.58deg, rgba(59, 43, 30, 0.37) 43.56%, #67b5fe 112.68%);
+    flex: 1;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 1px;
+  }
+  .grid-c1-content .lg-value {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: #c7c4c6;
+  }
+  .grid-c1-content .expiry-text {
+    margin-bottom: 6px;
+  }
+  .grid-c1-content .card-wrapper {
+    display: flex;
+  }
+  .grid-c1-content .card-pin-hidden {
+    font-size: 32px;
+    margin-right: 8px;
+  }
+  .grid-c1-content span {
+    color: #8a8587;
+  }
+  .grid-c1 .card-logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .grid-c1 .card-logo {
+    display: flex;
+  }
+  .grid-c1 .logo-shape1,
+  .grid-c1 .logo-shape2 {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+  }
+  .grid-c1 .logo-shape1 {
+    background-color: var(--clr-scarlet-v1);
+    margin-right: -15px;
+    z-index: 0;
+  }
+  .grid-c1 .logo-shape2 {
+    background-color: var(--clr-yellow);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid-c1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
